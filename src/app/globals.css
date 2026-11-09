@@ -1,0 +1,182 @@
+
+@layer theme, base, primereact, components, utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@theme {
+  --breakpoint-xs: 575px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-1366xl: 1366px;
+  --breakpoint-1440xl: 1440px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1900px;
+}
+
+body, header, article, section, footer, form {
+  transition: background-color 0.1s, color 0.4s, border-color 0.4s;
+}
+
+:focus-visible {
+  outline: 3px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.custom-month-dropdown {
+  width: 100%;
+  min-height: 36px;
+  font-size: 13px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+}
+
+.custom-month-dropdown .p-dropdown-label {
+  font-size: 13px;
+  padding: 7px 10px;
+  color: #1e293b;
+}
+
+.custom-month-dropdown .p-dropdown-trigger {
+  width: 2rem;
+  color: #64748b;
+}
+
+.custom-month-dropdown .p-dropdown-trigger-icon {
+  font-size: 12px;
+}
+
+.p-dropdown-panel .p-dropdown-item {
+  font-size: 13px;
+  padding: 8px 10px;
+  color: #1e293b;
+  background: #ffffff;
+}
+
+.p-dropdown-panel .p-dropdown-item:hover {
+  background: #f1f5f9;
+}
+
+.p-dropdown-panel .p-dropdown-item.p-highlight {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.dark .custom-month-dropdown {
+  background: #2b333f;
+  border-color: #48586e;
+  color: #f8fafc;
+}
+
+.dark .custom-month-dropdown .p-dropdown-label {
+  color: #f8fafc;
+}
+
+.dark .custom-month-dropdown .p-dropdown-trigger {
+  color: #cbd5e1;
+}
+
+.dark .p-dropdown-panel {
+  background: #1e293b;
+  border: 1px solid #475569;
+}
+
+.dark .p-dropdown-panel .p-dropdown-item {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.dark .p-dropdown-panel .p-dropdown-item:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+.dark .p-dropdown-panel .p-dropdown-item.p-highlight {
+  background: #334155;
+  color: #93c5fd;
+}
+
+.dark .custom-month-dropdown.p-focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 1px #60a5fa;
+}
+
+.dashboard-blur-mask {
+  background: rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  isolation: isolate;
+}
+
+.dashboard-blur-mask .p-sidebar {
+  backdrop-filter: none !important;
+}
+@media (max-width: 574px) {
+  .custom-month-dropdown {
+    min-height: 32px;
+    font-size: 11px;
+  }
+
+  .custom-month-dropdown .p-dropdown-label {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .custom-month-dropdown .p-dropdown-trigger {
+    width: 1.75rem;
+  }
+
+  .custom-month-dropdown .p-dropdown-trigger-icon {
+    font-size: 10px;
+  }
+
+  .p-dropdown-panel .p-dropdown-item {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .custom-month-dropdown {
+    min-height: 34px;
+  }
+
+  .custom-month-dropdown .p-dropdown-label {
+    font-size: 12px;
+    padding: 6px 9px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-month-dropdown {
+    min-height: 35px;
+  }
+
+  .custom-month-dropdown .p-dropdown-label {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-month-dropdown {
+    min-height: 36px;
+  }
+
+  .custom-month-dropdown .p-dropdown-label {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}

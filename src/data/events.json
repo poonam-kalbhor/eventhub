@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Neon Nights Festival",
+    "category": "Music",
+    "date": "2026-12-05",
+    "location": "Goa, IN",
+    "price": 1499,
+    "tags": ["live", "outdoor"],
+    "image": "/images/events/sound.webp"
+  },
+  {
+    "id": 2,
+    "title": "AI Builders Summit",
+    "category": "Tech",
+    "date": "2026-12-09",
+    "location": "Bengaluru, IN",
+    "price": 2999,
+    "tags": ["AI", "networking"],
+    "image": "/images/events/tech.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Street Food Carnival",
+    "category": "Food",
+    "date": "2026-12-12",
+    "location": "Delhi, IN",
+    "price": 0,
+    "tags": ["family", "tacos"],
+    "image": "/images/events/food.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Modern Art Walk",
+    "category": "Art",
+    "date": "2026-12-18",
+    "location": "Mumbai, IN",
+    "price": 799,
+    "tags": ["gallery", "guided"],
+    "image": "/images/events/art.jpg"
+  },
+  {
+    "id": 5,
+    "title": "City Marathon 10K",
+    "category": "Sports",
+    "date": "2027-01-10",
+    "location": "Hyderabad, IN",
+    "price": 599,
+    "tags": ["running", "charity"],
+    "image": "/images/events/sport.png"
+  },
+  {
+    "id": 6,
+    "title": "Sunrise Yoga Retreat",
+    "category": "Wellness",
+    "date": "2027-01-15",
+    "location": "Rishikesh, IN",
+    "price": 0,
+    "tags": ["yoga", "nature"],
+    "image": "/images/events/yoga.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Jazz in the Park",
+    "category": "Music",
+    "date": "2027-01-22",
+    "location": "Jaipur, IN",
+    "price": 499,
+    "tags": ["jazz", "picnic"],
+    "image": "/images/events/sound.webp"
+  },
+  {
+    "id": 8,
+    "title": "Frontend Futures Conf",
+    "category": "Tech",
+    "date": "2027-01-28",
+    "location": "Pune, IN",
+    "price": 1999,
+    "tags": ["React", "CSS"],
+    "image": "/images/events/tech.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Chef’s Table Experience",
+    "category": "Food",
+    "date": "2027-02-06",
+    "location": "Chennai, IN",
+    "price": 1499,
+    "tags": ["tasting", "premium"],
+    "image": "/images/events/food.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Open Studio Weekend",
+    "category": "Art",
+    "date": "2027-02-13",
+    "location": "Kochi, IN",
+    "price": 0,
+    "tags": ["workshop", "free"],
+    "image": "/images/events/art.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Night Cycling Tour",
+    "category": "Sports",
+    "date": "2027-02-20",
+    "location": "Chandigarh, IN",
+    "price": 499,
+    "tags": ["cycling", "night"],
+    "image": "/images/events/sport.png"
+  },
+  {
+    "id": 12,
+    "title": "Sound Bath Evening",
+    "category": "Wellness",
+    "date": "2027-02-27",
+    "location": "Mysuru, IN",
+    "price": 999,
+    "tags": ["meditation", "calm"],
+    "image": "/images/events/yoga.jpg"
+  }
+]
