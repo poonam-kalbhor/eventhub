@@ -58,7 +58,7 @@ export default function Home() {
   }
 
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig>
       <Header
         search={search}
         setSearch={setSearch}
@@ -66,11 +66,10 @@ export default function Home() {
         openDrawer={() => setDrawerOpen(true)}
       />
 
-      <main id="top">
+      <main>
         <Hero />
 
         <section
-          id="events"
           className="mx-auto w-full px-[25px] py-12 lg:px-[70px] 2xl:px-[200px]"
         >
           <motion.h2
@@ -93,7 +92,7 @@ export default function Home() {
             setFreeOnly={setFreeOnly}
           />
 
-          <p className="sr-only" aria-live="polite">
+          <p>
             {filteredEvents.length} events found
           </p>
 

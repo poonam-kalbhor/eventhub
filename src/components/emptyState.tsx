@@ -10,7 +10,7 @@ export default function EmptyState({
   onReset: () => void;
 }) {
   return (
-    <div role="status" className="mx-auto max-w-md py-12 text-center">
+    <div className="mx-auto max-w-md py-12 text-center">
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{
@@ -38,7 +38,6 @@ export default function EmptyState({
 
       <Button
         label="Clear filters"
-
         rounded
         onClick={onReset}
         className="mt-5"

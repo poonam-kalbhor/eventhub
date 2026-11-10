@@ -58,7 +58,6 @@ export default function EventCard({
       >
         <Tag
           value={event.category}
-          severity="contrast"
           className="absolute left-3 top-3"
         />
 

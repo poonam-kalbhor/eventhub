@@ -36,14 +36,12 @@ interface FiltersProps {
 export default function Filters(props: FiltersProps) {
   return (
     <form
-      aria-label="Filter events"
       onSubmit={(e) => e.preventDefault()}
       className="mb-8 grid gap-6 rounded-xl border border-slate-200 bg-white p-4 sm:grid-cols-2 lg:grid-cols-4 dark:border-[#324257] dark:bg-[#374353]"
     >
      
       <div>
         <label
-          htmlFor="category"
           className="mb-2 block text-sm font-semibold"
         >
           Category
@@ -61,7 +59,6 @@ export default function Filters(props: FiltersProps) {
       
       <div>
         <label
-          htmlFor="month"
           className="mb-2 block text-sm font-semibold"
         >
           Date
@@ -81,7 +78,6 @@ export default function Filters(props: FiltersProps) {
       
       <div>
         <span
-          id="price-label"
           className="mb-2 block text-sm font-semibold"
         >
           Max price: ₹{props.maxPrice.toLocaleString("en-IN")}
@@ -105,7 +101,7 @@ export default function Filters(props: FiltersProps) {
           onChange={(e) => props.setFreeOnly(e.value)}
         />
 
-        <label htmlFor="free" className="font-semibold">
+        <label className="font-semibold">
           Free events only
         </label>
       </div>

@@ -15,15 +15,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" suppressHydrationWarning className={geist.variable}>
+    <html lang="en" className={geist.variable}>
       
       <body className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-        <a
-          href="#events"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-indigo-600 focus:p-2 focus:text-white"
-        >
-          Skip to events
-        </a>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
