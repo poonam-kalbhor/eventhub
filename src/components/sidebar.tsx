@@ -1,9 +1,9 @@
 
 "use client";
 import Image from "next/image";
-import { Button } from "primereact/button";
 import { Sidebar } from "primereact/sidebar";
 import { EventItem } from "@/types/event";
+import ConfirmationDialog from "./confirmationdialog";
 
 interface SavedDrawerProps {
   open: boolean;
@@ -56,14 +56,16 @@ export default function SavedDrawer({
                 </p>
               </div>
 
-              <Button
+              {/* <Button
                 icon="pi pi-trash"
                 rounded
                 text
                 severity="danger"
                 onClick={() => removeEvent(event.id)}
                 aria-label={`Remove ${event.title}`}
-              />
+              /> */}
+<ConfirmationDialog/>
+              
             </li>
           ))}
         </ul>
